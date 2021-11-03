@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>Emotion To Emoji</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+      <h3 class="btn btn-info heading">Emotion To Emoji WebApp<br>
+        <span>&#9996</span><span>&#128077</span><span>&#128076</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+        <p style="font-size: 12px;">This model recognizes these gestures</p>
+        <br>
+        <b>&#9996</b>
+        <br>
+        <b>&#128077</b>
+        <br>
+        <b>&#128076</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>WebCam view - </label>
+        <div id="cam"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="Click()">click</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1 - </label>
+        <p id="emoji-name1"></p>
+        <p id="emoji1"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot - </label>
+        <div id="pic"></div>
+        <br><br>
+        <button class="btn btn-success" onclick="predict()">Predict</button>
+      </div>
+
+    </center>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
